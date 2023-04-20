@@ -3,8 +3,8 @@ resource "aws_iam_user" "policy_user" {
 }
 
 resource "aws_iam_policy" "read_only_iam_console_policy" {
-  name        = "UsersReadOnlyAccessToIAMConsole"
-  path        = "/"
+  name = "UsersReadOnlyAccessToIAMConsole"
+  path = "/"
 
   policy = jsonencode({
     Version = "2012-10-17"
@@ -12,9 +12,9 @@ resource "aws_iam_policy" "read_only_iam_console_policy" {
       {
         Effect = "Allow",
         Action = [
-            "iam:GenerateCredentialReport",
-            "iam:Get*",
-            "iam:List*"
+          "iam:GenerateCredentialReport",
+          "iam:Get*",
+          "iam:List*"
         ],
         Resource = "*"
       },
