@@ -10,7 +10,6 @@ resource "aws_iam_user" "finance_user" {
   name = "FinanceUser"
 }
 
-
 # Billingフルアクセスグループ
 resource "aws_iam_group" "billing_full_access_group" {
   name = "BillingFullAccessGroup"
