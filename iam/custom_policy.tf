@@ -1,3 +1,5 @@
+# NOTE: カスタムポリシーを作成して、IAMユーザにアタッチを行う。
+
 resource "aws_iam_user" "policy_user" {
   name = "PolicyUser"
 }

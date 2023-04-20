@@ -1,3 +1,5 @@
+# NOTE: 会計関連のユーザ及びグループを作成し権限を付与する。
+
 data "aws_caller_identity" "current" {}
 
 # 会計マネージャユーザの作成
